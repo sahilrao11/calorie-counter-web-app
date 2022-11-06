@@ -1,24 +1,56 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Calorie Counter</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
+
+
 <body>
-	<style type="text/css">
-		body {
-			background-color: skyblue;
-			text-align: center;
-		}
-	</style>
-	<form action="/users" method="POST">
-		<label>name</label>
-		<input type="text" name="name" autocomplete="off">
-		<br>
-		<br>
-		<button type="submit">submit</button>
-	</form>
+    <style type="text/css">
+        body{
+            background-color: lavenderblush;
+            text-align: center;
+            background-image: url('./top-view-circular-food-frame.jpg');
+            background-repeat: no-repeat;
+
+        }
+        input{
+            border-radius: 15px;
+        }
+        form{
+            position: absolute; left: 50%; top: 50%;transform: translate(-50%,-50%); 
+
+        }
+        
+
+
+        
+
+    </style>
+    <form action="/user" method="POST">
+        <label>NAME OF THE FOOD</label>
+        <div>
+            <br>
+            <div>
+                <input type="text" id="inp">
+            </div>
+            <br>
+        <div>
+            <label>AMOUNT OF FOOD </label><br>
+            <br>
+            <input type="text" name="weight" id="weight" placeholder="in grams">
+        </div>    
+            <div><br>
+                <button type="submit">submit</button>
+            </div>
+
+        </div>
+
+    </form>
+    
+    
 </body>
 </html>
